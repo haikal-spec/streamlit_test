@@ -5,7 +5,7 @@ import requests
 st.title('My First Streamlit App !!') 
 
 # Add a welcome message 
-st.write('Welcome to my Streamlit app!') 
+st.write('Domain Expansion!') 
 
 # Create a text input 
 widgetuser_input = st.text_input('Enter a custom message:', 'Hello, Streamlit!') 
@@ -15,7 +15,7 @@ st.write('Customized Message:', widgetuser_input)
 
 
 #API calls
-response = requests.get('https://api.vatcomply.com/rates?base=USD')
+response = requests.get('https://api.vatcomply.com/rates?base=MYR')
 
 if response.status_code == 200:
     data = response.json()
